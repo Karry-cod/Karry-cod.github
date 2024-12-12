@@ -29,7 +29,7 @@ export default defineConfig({
   site: USER_SITE,
   output: 'static',
   site: 'https://karry-cod.github.io',
-  // base: 'my-repo',
+  base: 'blob',
   // output: 'server',
   // adapter: vercel(),
   style: {
