@@ -27,9 +27,11 @@ const { USER_SITE } = await import('./src/consts.ts');
 // https://astro.build/config
 export default defineConfig({
   site: USER_SITE,
-  // output: 'static',
-  output: 'server',
-  adapter: vercel(),
+  output: 'static',
+  site: 'https://karry.github.io',
+  // base: 'my-repo',
+  // output: 'server',
+  // adapter: vercel(),
   style: {
     scss: {
       includePaths: ["./src/styles"],
