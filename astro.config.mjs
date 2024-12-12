@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+import vercel from '@astrojs/vercel/serverless';
 import { CODE_THEME } from "./src/consts.ts";
 import mdx from "@astrojs/mdx";
 import icon from "astro-icon";
@@ -26,7 +27,9 @@ const { USER_SITE } = await import('./src/consts.ts');
 // https://astro.build/config
 export default defineConfig({
   site: USER_SITE,
-  output: 'static',
+  // output: 'static',
+  output: 'server',
+  adapter: vercel(),
   style: {
     scss: {
       includePaths: ["./src/styles"],
