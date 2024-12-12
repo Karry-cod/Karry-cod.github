@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro check && astro build && powershell -File ./build.ps1",
     "preview": "astro preview",
     "astro": "astro"
   },
