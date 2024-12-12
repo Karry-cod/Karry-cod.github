@@ -28,8 +28,8 @@ const { USER_SITE } = await import('./src/consts.ts');
 export default defineConfig({
   site: USER_SITE,
   output: 'static',
-  site: 'https://Karry-cod.github.io',
-  base: 'dist',
+  // site: 'https://Karry-cod.github.io',
+  // base: 'dist',
   // output: 'server',
   // adapter: vercel(),
   style: {
